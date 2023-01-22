@@ -1,0 +1,39 @@
+body{
+background-color: green;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 15%;
+}
+main{
+    color: white;
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-radius: 15px;
+}
+.quiz-question{
+    padding: 15px;
+    text-align: center;
+}
+li{
+    padding: 15px; 
+}
+li:hover{
+    background-color: green;
+}
+button{
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    color: green;
+    padding: 5px;
+    border-color: greenyellow;
+}
+button:hover{
+    background-color: black;
+}
+
