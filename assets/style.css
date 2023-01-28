@@ -4,6 +4,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
 margin-top: 15%;
 }
 main{
@@ -37,3 +38,16 @@ button:hover{
     background-color: black;
 }
 
+.start-btn{
+    width: 100px;
+    height: 50px;
+}
+.large-font {
+    font-size: 3.5em;
+    text-align: center;
+}
+.timer{
+height: 240px;
+padding: 10px;
+color: rgb(7, 9, 7);
+}
