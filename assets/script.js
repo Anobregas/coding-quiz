@@ -1,4 +1,5 @@
 // reached into the html and grabbed a bunch of elements
+
 var section = document.getElementById("quiz")
 var choiceEl = document.querySelectorAll(".choice")
 var questionEl = document.querySelector("#question")
@@ -9,9 +10,10 @@ var CChoice = document.getElementById("third-choice")
 var currentQuiz = 0
 var score = 0
 var timer;
-var timerCount = 10
+var timerCount = 15
 var timerElement = document.querySelector(".timer");
 var startBtn = document.querySelector(".start-btn")
+
 
 // defined a list of questions
 var quizText = [
@@ -106,7 +108,10 @@ btn.addEventListener("click", () => {
             // if not loadquiz
             loadquiz()
         } else {
-            section.innerHTML = score;
+            section.innerHTML = "Correct Answers:  " + score;
+            clearInterval(timer);
+            setTimeout(highScore, 1000);
+            
         }
     }
 })
@@ -132,10 +137,17 @@ function startTimer() {
 function loseGame() {
     section.textContent = "GAME OVER";
   }
+//log high score
+function highScore() {
+  var logHighScore =  prompt("Q", "enter name here")
+  //store value of prompt 
+    if(logHighScore != null){
+        timerElement.innerHTML =
+        "well done " + logHighScore + "!";
+    }
+}
 
 
 
 
   
-
-
