@@ -139,7 +139,7 @@ function loseGame() {
   }
 //log high score
 function highScore() {
-  var logHighScore =  prompt("Q", "enter name here")
+  var logHighScore =  prompt("Well done ", "enter name here")
   //store value of prompt 
     if(logHighScore != null){
         timerElement.innerHTML =
